@@ -24,7 +24,7 @@ namespace Lesson12HomeWork
                 $"TimeToAlarm: {TimeToAlarm} \n" +
                 $"IsOutDate: {IsOutdated} \n" +
                 $"ChatName: {ChatName} \n" +
-                $"AccountName: {AccountName}";
+                $"AccountName: {AccountName} \n";
         }
     }
 }

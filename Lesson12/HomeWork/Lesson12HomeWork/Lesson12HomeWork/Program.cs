@@ -6,14 +6,6 @@ namespace Lesson12HomeWork
     {
         static void Main(string[] args)
         {
-            //var day1 = "2012-03-01 00:00:00";
-            //var day2 = "2019-10-18 15:20:00";
-            //ReminderItem item1 = new ReminderItem(DateTimeOffset.Parse("2019-10-18 15:20:00"), "AlarmClock 1");
-            //Console.WriteLine(item1.WriteProperties());
-
-            //ReminderItem item2 = new ReminderItem(DateTimeOffset.Parse(day2), "AlarmClock 2");
-            //Console.WriteLine("\n" + item2.WriteProperties());
-
             var objects = new ReminderItem[3];
 
             objects[0] = new ReminderItem(DateTimeOffset.Parse("2019-10-18 15:20:00"), "Object1");
