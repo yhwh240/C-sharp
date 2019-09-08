@@ -19,14 +19,7 @@ namespace Lesson11HomeWork
         {
             get
             {
-                if (DateTime.Now >= AlarmDate)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return DateTime.Now >= AlarmDate;
             }
         }
 
