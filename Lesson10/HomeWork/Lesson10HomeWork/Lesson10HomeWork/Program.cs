@@ -29,7 +29,6 @@ namespace Lesson10HomeWork
                 Console.WriteLine(people[i].Descriprion);
             }
 
-
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }

@@ -9,6 +9,7 @@ namespace Lesson10HomeWork
         public string Name { get; set; }
         public int Age { get; set; }
 
+
         public int AgeAfter4Years
         {
             get
@@ -24,10 +25,5 @@ namespace Lesson10HomeWork
                 return $"Name: {Name}, Age after 4 years : {AgeAfter4Years}";
             }
         }
-
-
-
-
-
     }
 }
