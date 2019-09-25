@@ -7,23 +7,23 @@ namespace Reminder.Storage.InMemory
 {
 	public class InMemoryReminderStorage : IReminderStorage
 	{
-		private Dictionary<Guid, ReminderItem> _reminders;
+		internal Dictionary<Guid, ReminderItem> Reminders;
 
 		public void Add(ReminderItem reminderItem)
 		{
-			_reminders.Add(reminderItem.Id, reminderItem);
+			Reminders.Add(reminderItem.Id, reminderItem);
 		}
 
 		public ReminderItem Get(Guid id)
 		{
-			return _reminders.ContainsKey(id)
-				? _reminders[id]
+			return Reminders.ContainsKey(id)
+				? Reminders[id]
 				: null;
 		}
 
 		public List<ReminderItem> Get(ReminderItemStatus status)
 		{
-			return _reminders
+			return Reminders
 				.Values
 				.Where(
 				(ReminderItem ri) => ri.Status == status)
@@ -32,8 +32,8 @@ namespace Reminder.Storage.InMemory
 
 		public void Update(Guid id, ReminderItemStatus status)
 		{
-			if (_reminders.ContainsKey(id))
-				_reminders[id].Status = status;
+			if (Reminders.ContainsKey(id))
+				Reminders[id].Status = status;
 			//else not implemented
 		}
 	}
