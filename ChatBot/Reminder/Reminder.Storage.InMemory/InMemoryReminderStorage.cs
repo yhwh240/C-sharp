@@ -5,9 +5,14 @@ using System.Linq;
 
 namespace Reminder.Storage.InMemory
 {
-	public class InMemoryReminderStorage : IReminderStorage
+	public class InMemoryReminderStorage: IReminderStorage
 	{
 		internal Dictionary<Guid, ReminderItem> Reminders;
+
+		public InMemoryReminderStorage()
+		{
+			Reminders = new Dictionary<Guid, ReminderItem>();
+		}
 
 		public void Add(ReminderItem reminderItem)
 		{
